@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xia Kangjie is a Ph.D. student at Fudan University researching AI agents, theorem retrieval, and data integrity.">
+  <meta name="theme-color" content="#f6f7f2">
+  <title>Xia Kangjie | Research</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f7f2;
+      --ink: #202a26;
+      --muted: #64716b;
+      --line: #d7ded7;
+      --green: #245c4b;
+      --orange: #bf603e;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Aptos", "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.65 var(--sans);
+    }
+
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:hover { color: var(--orange); }
+
+    .page {
+      width: min(100% - 48px, 920px);
+      margin-inline: auto;
+    }
+
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 22px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .04em;
+    }
+
+    .masthead a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 250px;
+      gap: 48px;
+      align-items: end;
+      padding-block: 76px 64px;
+    }
+
+    .eyebrow, .section-label {
+      margin: 0 0 14px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 8px;
+      font: 400 clamp(46px, 8vw, 76px)/1.02 var(--serif);
+      letter-spacing: 0;
+    }
+
+    .name-cn {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font: 23px/1.3 var(--serif);
+    }
+
+    .intro {
+      max-width: 610px;
+      margin-bottom: 0;
+      color: #3e4b45;
+      font-size: 17px;
+    }
+
+    .contact {
+      padding: 18px 0 4px 20px;
+      border-left: 2px solid var(--orange);
+      font-size: 14px;
+    }
+
+    .contact p { margin-bottom: 9px; }
+    .contact p:last-child { margin-bottom: 0; }
+    .contact-label { display: block; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+    .contact a { overflow-wrap: anywhere; }
+
+    main { border-top: 1px solid var(--line); }
+
+    section {
+      display: grid;
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 36px;
+      padding-block: 34px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0;
+      font: 400 22px/1.25 var(--serif);
+    }
+
+    .section-body > :last-child { margin-bottom: 0; }
+    .interests { max-width: 610px; margin-bottom: 0; }
+
+    .entry { margin-bottom: 25px; }
+    .entry:last-child { margin-bottom: 0; }
+
+    .entry-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+
+    h3 { margin-bottom: 0; font-size: 16px; line-height: 1.45; }
+    .date { flex: 0 0 auto; color: var(--muted); font-size: 13px; }
+    .subline { margin-bottom: 8px; color: var(--muted); font-size: 13px; }
+
+    ul { margin: 8px 0 0; padding-left: 19px; }
+    li { margin-block: 4px; }
+
+    .compact { color: #3e4b45; }
+    .compact p { margin-bottom: 8px; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-block: 22px 30px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .page { width: min(100% - 36px, 920px); }
+      .hero { grid-template-columns: 1fr; gap: 28px; padding-block: 54px 42px; }
+      .contact { max-width: 420px; }
+      section { grid-template-columns: 1fr; gap: 16px; padding-block: 27px; }
+      .entry-heading { display: block; }
+      .date { display: block; margin-top: 3px; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <a href="#top">XK / Research</a>
+      <span>Fudan University</span>
+    </header>
+
+    <div class="hero" id="top">
+      <div>
+        <p class="eyebrow">Ph.D. Student · AI Agents</p>
+        <h1>Xia Kangjie</h1>
+        <p class="name-cn">夏康杰</p>
+        <p class="intro">I am a Ph.D. student in Electronic Information at Fudan University. My research interests include agent behavior and safety, mathematical theorem retrieval, and defenses against corpus poisoning.</p>
+      </div>
+      <aside class="contact" aria-label="Contact and profiles">
+        <p><span class="contact-label">Email</span><a href="mailto:25113050289@m.fudan.edu.cn">25113050289@m.fudan.edu.cn</a></p>
+        <p><span class="contact-label">Affiliation</span>School of Computing and Intelligence Innovation<br>Fudan University, Shanghai</p>
+        <p><span class="contact-label">GitHub</span><a href="https://github.com/xiakjyyds">github.com/xiakjyyds</a></p>
+      </aside>
+    </div>
+
+    <main>
+      <section aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <div class="section-body">
+          <p class="interests">I study how agents interact with information and tools, how mathematical knowledge can be retrieved reliably, and how poisoned data can undermine these systems.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected Projects</h2>
+        <div class="section-body">
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>Corpus Poisoning and Defenses in Lean Theorem Retrieval</h3>
+              <time class="date" datetime="2026-10">Oct 2026 – Present</time>
+            </div>
+            <p class="subline">Independent research · Lean 4, Mathlib, Python</p>
+            <ul>
+              <li>Built a reproducible theorem-retrieval prototype and processed 452,493 elaborated theorem declarations exported from Lean.</li>
+              <li>Implemented BM25 and TF-IDF baselines, controlled corpus poisoning, trust filtering, and deduplication defenses.</li>
+              <li>Designed theorem mutations involving quantifier, hypothesis, definition, and axiom-dependency drift, and checked them with Lean.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>Know Your Audience: Empowering Agents to Generate Ads for Agents</h3>
+              <time class="date" datetime="2026-05">May – Aug 2026</time>
+            </div>
+            <p class="subline">Research project · Agent–Web interaction</p>
+            <ul>
+              <li>Contributed to research-question and experiment design; implemented a simulated web environment, agent simulator, and comparison framework.</li>
+              <li>Studied how keyword matching, visual salience, and semantic alignment affect web-agent clicks across accessibility-tree and text-only page representations.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="section-body">
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>Fudan University</h3>
+              <time class="date" datetime="2025-09">Sep 2025 – Jun 2030 (expected)</time>
+            </div>
+            <p class="subline">Ph.D. student in Electronic Information · School of Computing and Intelligence Innovation</p>
+          </article>
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>ShanghaiTech University</h3>
+              <time class="date" datetime="2021-09">Sep 2021 – Jun 2025</time>
+            </div>
+            <p class="subline">B.S. in Computer Science and Technology · GPA 3.56/4.00 · Department rank 51/234</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="more-heading">
+        <h2 id="more-heading">More</h2>
+        <div class="section-body compact">
+          <p><strong>Earlier research:</strong> NeRF-based 3D scene reconstruction (VRVC-MARS Lab, ShanghaiTech, 2022–2023); local deployment and interactive exploration of Stable Diffusion (ShanghaiTech, 2024).</p>
+          <p><strong>Honors:</strong> Third Prize, China Undergraduate Mathematical Contest in Modeling (2023); Second Prize, National Mathematics Competition for Non-Mathematics Majors (2023); Second Prize, Shanghai Mathematics Competition for Non-Mathematics Majors (2022).</p>
+          <p><strong>Tools:</strong> Python, C++, Java, JavaScript, PyTorch, NumPy, Lean 4, Mathlib, LaTeX.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Xia Kangjie · Fudan University</span>
+      <a href="mailto:25113050289@m.fudan.edu.cn">25113050289@m.fudan.edu.cn</a>
+    </footer>
+  </div>
+</body>
+</html>
